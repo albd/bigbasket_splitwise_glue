@@ -1,0 +1,4 @@
+837c837
+<         self.clipBoard.set_text(contents.encode("utf-8"))
+---
+>         self.clipBoard.set_text(contents.encode("utf-8"), -1)
