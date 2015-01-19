@@ -1,0 +1,14 @@
+To install in linux do the following:
+
+	1. Open terminal and cd into this directory.
+	2. Run ./install.sh
+
+
+To run the program:
+
+	1. Download BigBasket Invoice as html file.
+	2. Launch autokey by running the command autokey or by any others means.
+	3. Open splitwise itemised bill.
+	4. Place the cursor in the first item field and press <ctrl>+<alt>+h (press h while holding ctrl and alt).
+	5. In the file selection dialog select the bigbasket invoice saved as html.
+	6. If the script is successful, it should inject the items and prices into the itemised bill fields. 
