@@ -1,8 +1,13 @@
+from Tkinter import Tk
+from tkFileDialog import askopenfilename
 import re
 from lxml import html
 import time
 
-file = open("/mnt/data/technical/bigbasket_splitwise_glue/samples/Invoice.html",'r')
+Tk().withdraw()
+path = askopenfilename()
+
+file = open(path,'r')
 invoice = file.read()
 tree = html.fromstring(invoice)
 items = tree.xpath('//div[@class="delete-wpr"]/text()')
