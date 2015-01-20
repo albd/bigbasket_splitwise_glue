@@ -1,7 +1,22 @@
-To install in linux do the following:
+To install in linux open terminal, cd into this directory and run the following commands:
+	
+#installing dependencies
 
-	1. Open terminal and cd into this directory.
-	2. Run ./install.sh
+sudo apt-add-repository ppa:cdekter/ppa
+sudo apt-get update
+sudo apt-get install autokey-gtk python-tk python-lxml
+
+#patching a bug in autokey
+
+sudo patch -N /usr/lib/python2.7/dist-packages/autokey/scripting.py autokey.patch
+
+#starting autokey
+
+autokey &
+
+#copying script and configuration to autokey directory
+
+cp glue.py .glue.json ~/.config/autokey/data/Sample\ Scripts
 
 
 To run the program:
